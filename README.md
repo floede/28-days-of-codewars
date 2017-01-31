@@ -21,5 +21,5 @@ By using codewars.com as the platform we can each get challenges according to ou
 7. Tell us how it goes in Tech room at [talk.seanwes.com](http://talk.seanwes.com)
 
 ## Note
-* If you have any questions or ideas about 28 Days Of Codewars (or other ideas), feel free to reach out to me on Twitter: [@floede](https://twitter.com/floede)
+* If you have any questions or ideas about 28 Days Of Codewars (or other ideas), feel free to reach out to me on the community chat, I'm Janus Hasseriis or through Twitter: [@floede](https://twitter.com/floede)
 * This is all just a shameless rip-off of [100Daysofcode](https://github.com/Kallaway/100-days-of-code) :-)
