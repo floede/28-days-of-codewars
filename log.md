@@ -1,30 +1,38 @@
-# 100 Days Of Code - Log
+# 28 Days Of Codewars - Log
 
-### Day 0: February 30, 2016 (Example 1)
+### Day 1: February 1, 2017 (Example 1)
 ##### (delete me or comment me out)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Challenge**: Count the number of vowels in a string.
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Solution**:
 
-**Link to work:** [Calculator App](http://www.example.com)
+```
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = str.match(/[aeiou]/gi);
+  vowelsCount = vowels ? vowels.length : 0;
+  return vowelsCount;
+}
+```
 
-### Day 0: February 30, 2016 (Example 2)
+**Thoughts:** As usual I find that others come up with much much simpler solutions than I do.
+
+**Link to work:** [Vowel Count](https://www.codewars.com/kata/vowel-count/javascript)
+
+### Day 2: February 2, 2017 (Example 2)
 ##### (delete me or comment me out)
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Change**: Add numbers together, return the binary.
 
-**Thoughts**: I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Solution**:
 
-**Link(s) to work**: [Calculator App](http://www.example.com)
+```
+function addBinary(a,b) {
+  return (a + b >>> 0).toString(2);
+}
+```
 
+**Thoughts**: I'm not strong in binary, so I basically had to look up the entire solution. However it was quite easy to shorten it down to just one line.
 
-### Day 1: June 27, Monday
-
-**Today's Progress**: I've gone through many exercises on FreeCodeCamp.
-
-**Thoughts** I've recently started coding, and it's a great feeling when I finally solve an algorithm challenge after a lot of attempts and hours spent.
-
-**Link(s) to work**
-1. [Find the Longest Word in a String](https://www.freecodecamp.com/challenges/find-the-longest-word-in-a-string)
-2. [Title Case a Sentence](https://www.freecodecamp.com/challenges/title-case-a-sentence)
+**Link(s) to work**: [Binary Addition](https://www.codewars.com/kata/binary-addition/javascript)
