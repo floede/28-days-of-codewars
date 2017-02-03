@@ -45,3 +45,20 @@ function isNarcissistic( value ) {
 **Thoughts:** I struggled a bit with this. Possibly you could be cleverer about the string and int conversions.
 
 **Link to work:** [Narcissistic Numbers](https://www.codewars.com/kata/narcissistic-numbers/javascript)
+
+
+### Day 3: February 3, 2017 (Example 3)
+
+**Today's Challenge**: Return a string with all vowels removed.
+
+**Solution**:
+
+```
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+```
+
+**Thoughts:** This was pretty easy as I've already done another challenge that is the opposite. However I did learn that "y" is not always a vowel. TIL.
+
+**Link to work:** [Disemvowel Trolls](https://www.codewars.com/kata/disemvowel-trolls/javascript)
