@@ -63,6 +63,15 @@ function disemvowel(str) {
 
 **Link to work:** [Disemvowel Trolls](https://www.codewars.com/kata/disemvowel-trolls/javascript)
 
+
+
+### Day 4: February 5, 2017 (Example 4)
+
+**Today's Challenge**: Test if a number is a prime
+
+**Solution**:
+
+```
 function isPrime(num) {
   if (num <= 1) return false;
   if (num <= 3) return true;
@@ -80,3 +89,20 @@ function isPrime(num) {
     return true;
   }
 }
+```
+
+**Thoughts:** While this code passes the test, it's actually not correct. Or enough rather. 
+Given that the list of primes goes towards infinity, I didn't quite know how to write some code that wouldn't have to test against infinity. I thought I had figured out that 7 is actually the highest divisor you need to test, since 9 is 3x3.
+
+**Link to work:** [Is a number prime?](https://www.codewars.com/kata/is-a-number-prime/javascript)
+
+**Better solution**:
+
+```
+function isPrime(num) {
+  for (var i = 2; i * i <= num; i++) if (num % i == 0) return false;
+  return num >= 2; 
+}
+```
+
+**Link to Wikipedia about primes:**: [Primality Test](https://en.wikipedia.org/wiki/Primality_test)
