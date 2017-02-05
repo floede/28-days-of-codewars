@@ -62,3 +62,21 @@ function disemvowel(str) {
 **Thoughts:** This was pretty easy as I've already done another challenge that is the opposite. However I did learn that "y" is not always a vowel. TIL.
 
 **Link to work:** [Disemvowel Trolls](https://www.codewars.com/kata/disemvowel-trolls/javascript)
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  if (num <= 3) return true;
+  if (num == 5) return true;
+  if (num == 7) return true;
+  if (num % 2 == 0) {
+    return false;
+  } else if (num % 3 == 0) {
+    return false;
+  } else if (num % 5 == 0) {
+    return false;
+  } else if (num % 7 == 0) {
+    return false;
+  } else {
+    return true;
+  }
+}
