@@ -107,6 +107,14 @@ function isPrime(num) {
 
 **Link to Wikipedia about primes:**: [Primality Test](https://en.wikipedia.org/wiki/Primality_test)
 
+
+### Day 5: February 6, 2017 (Example 5)
+
+**Today's Challenge**: How many times will the mother see the ball bounce?
+
+**Solution**:
+
+```
 function bouncingBall(h, bounce, win) {
   if (h > 0 && 0 < bounce && bounce < 1 && h > win) {
     var ballHeight = h;
@@ -120,3 +128,10 @@ function bouncingBall(h, bounce, win) {
     return -1;
   }
 }
+```
+
+**Thoughts:** The tests for this were a little annoying and it was hard to figure out why it failed. Also I think my solution is more correct in the context than a lot of the other solutions. 
+Because we're counting views twice for each bounce (up and down), a lot of people start with -1 to offset the fact that the final view count logically is uneven.
+I'm starting a 1 because will always see the ball at least once, and then I don't count the last run of the loop.
+
+**Link to work:** [Bouncing ball](https://www.codewars.com/kata/bouncing-balls/javascript)
