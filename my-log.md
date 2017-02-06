@@ -106,3 +106,17 @@ function isPrime(num) {
 ```
 
 **Link to Wikipedia about primes:**: [Primality Test](https://en.wikipedia.org/wiki/Primality_test)
+
+function bouncingBall(h, bounce, win) {
+  if (h > 0 && 0 < bounce && bounce < 1 && h > win) {
+    var ballHeight = h;
+    var views = 1;
+    do {
+      ballHeight = ballHeight * bounce;
+      if (ballHeight > win) views += 2;
+    } while (ballHeight > win);
+    return views;
+  } else {
+    return -1;
+  }
+}
