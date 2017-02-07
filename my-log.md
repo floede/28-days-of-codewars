@@ -135,3 +135,11 @@ Because we're counting views twice for each bounce (up and down), a lot of peopl
 I'm starting a 1 because will always see the ball at least once, and then I don't count the last run of the loop.
 
 **Link to work:** [Bouncing ball](https://www.codewars.com/kata/bouncing-balls/javascript)
+
+
+function createPhoneNumber(numbers){
+  function numSlice(x,y) {
+    return numbers.slice(x,y).join("");
+  }
+  return ("(" + numSlice(0,3) + ") " + numSlice(3,6) +"-"+numSlice(6,10));
+}
