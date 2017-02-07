@@ -137,9 +137,21 @@ I'm starting a 1 because will always see the ball at least once, and then I don'
 **Link to work:** [Bouncing ball](https://www.codewars.com/kata/bouncing-balls/javascript)
 
 
+### Day 6: February 7, 2017 (Example 6)
+
+**Today's Challenge**: Format a string to an american phone number
+
+**Solution**:
+
+```
 function createPhoneNumber(numbers){
   function numSlice(x,y) {
     return numbers.slice(x,y).join("");
   }
   return ("(" + numSlice(0,3) + ") " + numSlice(3,6) +"-"+numSlice(6,10));
 }
+```
+
+**Thoughts:** Definitely on the easy side. The biggest challenge was probably trying to deliberately make a function for the slice and join part. 
+
+**Link to work:** [Create Phone Number](https://www.codewars.com/kata/create-phone-number/javascript)
