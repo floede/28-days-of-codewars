@@ -156,6 +156,15 @@ function createPhoneNumber(numbers){
 
 **Link to work:** [Create Phone Number](https://www.codewars.com/kata/create-phone-number/javascript)
 
+
+
+### Day 7: February 8, 2017 (Example 7)
+
+**Today's Challenge**: 
+
+**Solution**:
+
+```
 function goodVsEvil(good, evil){
   var the_good = good.split(" ");
   var the_evil = evil.split(" ");
@@ -182,3 +191,8 @@ function goodVsEvil(good, evil){
     return "Battle Result: No victor on this battle field";
   }
 }
+```
+
+**Thoughts:** 
+
+**Link to work:** [Example](https://www.example.com)
