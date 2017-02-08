@@ -155,3 +155,30 @@ function createPhoneNumber(numbers){
 **Thoughts:** Definitely on the easy side. The biggest challenge was probably trying to deliberately make a function for the slice and join part. 
 
 **Link to work:** [Create Phone Number](https://www.codewars.com/kata/create-phone-number/javascript)
+
+function goodVsEvil(good, evil){
+  var the_good = good.split(" ");
+  var the_evil = evil.split(" ");
+  var good_value = 
+      the_good[0] * 1 +
+      the_good[1] * 2 +
+      the_good[2] * 3 +
+      the_good[3] * 3 +
+      the_good[4] * 4 +
+      the_good[5] * 10;
+  var evil_value = 
+      the_evil[0] * 1 +
+      the_evil[1] * 2 +
+      the_evil[2] * 2 +
+      the_evil[3] * 2 +
+      the_evil[4] * 3 +
+      the_evil[5] * 5 +
+      the_evil[6] * 10;
+  if (good_value < evil_value) {
+    return "Battle Result: Evil eradicates all trace of Good";
+  } else if (good_value > evil_value) {
+    return "Battle Result: Good triumphs over Evil";
+  } else {
+    return "Battle Result: No victor on this battle field";
+  }
+}
