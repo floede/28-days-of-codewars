@@ -197,6 +197,14 @@ function goodVsEvil(good, evil){
 
 **Link to work:** [Good vs Evil](https://www.codewars.com/kata/good-vs-evil/javascript)
 
+
+### Day 8: February 9, 2017 (Example 8)
+
+**Today's Challenge**: 
+
+**Solution**: Chaining function calls
+
+```
 function add() {
     var a = "";
     // note you can rename it to anything you want, just keep all names in sync
@@ -207,3 +215,10 @@ function add() {
     }
     return F;
 };
+
+add(1)(2)(3);
+```
+
+**Thoughts:** This I just couldn't figure out. I found something that supposedly solves this, but I can't make it work. Basically I just don't know what goes on here.
+
+**Link to work:** [A Chain adding function](https://www.codewars.com/kata/a-chain-adding-function/javascript)
