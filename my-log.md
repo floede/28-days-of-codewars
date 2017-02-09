@@ -196,3 +196,14 @@ function goodVsEvil(good, evil){
 **Thoughts:** This was kinda fun. I knew it could be done smarter, but didn't quite see how. 
 
 **Link to work:** [Good vs Evil](https://www.codewars.com/kata/good-vs-evil/javascript)
+
+function add() {
+    var a = "";
+    // note you can rename it to anything you want, just keep all names in sync
+    function F(arg){
+        a = a + arg;
+        //console.log(a);
+        return F;
+    }
+    return F;
+};
