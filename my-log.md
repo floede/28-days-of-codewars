@@ -160,7 +160,7 @@ function createPhoneNumber(numbers){
 
 ### Day 7: February 8, 2017 (Example 7)
 
-**Today's Challenge**: 
+**Today's Challenge**: Assign a value to different creatures, see which side wins
 
 **Solution**:
 
@@ -193,6 +193,6 @@ function goodVsEvil(good, evil){
 }
 ```
 
-**Thoughts:** 
+**Thoughts:** This was kinda fun. I knew it could be done smarter, but didn't quite see how. 
 
-**Link to work:** [Example](https://www.example.com)
+**Link to work:** [Good vs Evil](https://www.codewars.com/kata/good-vs-evil/javascript)
