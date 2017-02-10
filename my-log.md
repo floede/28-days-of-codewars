@@ -222,3 +222,34 @@ add(1)(2)(3);
 **Thoughts:** This I just couldn't figure out. I found something that supposedly solves this, but I can't make it work. Basically I just don't know what goes on here.
 
 **Link to work:** [A Chain adding function](https://www.codewars.com/kata/a-chain-adding-function/javascript)
+
+function foldArray(array, runs)
+{
+  var folded = [];
+  var temp = array;
+  for(var i = 1; i <= runs; i++) {
+    console.log("for loop");
+    while (temp.length > 0) {
+      if (temp.length<=1) {
+        folded.push(parseInt(temp.splice(0,1)));
+      } else {
+        var a = parseInt(temp.splice(0,1));
+        var b = parseInt(temp.splice(-1,1));
+        folded.push(a + b);
+      }
+    }
+    if (i<runs) console.log("temp: " , temp);
+  }
+  //return [ 0 ];
+  console.log("folded:" , folded);
+}
+
+var input = [ 1, 2, 3, 4, 5 ];
+//var expected = [ 6, 6, 3 ];
+//foldArray(input, 1)
+    
+//expected = [ 9, 6 ];
+foldArray(input, 2);
+    
+//expected = [ 15 ];
+//foldArray(input, 3);
