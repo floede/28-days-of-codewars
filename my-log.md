@@ -223,6 +223,15 @@ add(1)(2)(3);
 
 **Link to work:** [A Chain adding function](https://www.codewars.com/kata/a-chain-adding-function/javascript)
 
+
+
+### Day 9: February 10, 2017 (Example 9)
+
+**Today's Challenge**: Fold an array by adding the first element to the last, the second to the second to last and so forth 
+
+**Solution**:
+
+```
 function foldArray(array, runs)
 {
   var folded = [];
@@ -253,3 +262,8 @@ foldArray(input, 2);
     
 //expected = [ 15 ];
 //foldArray(input, 3);
+```
+
+**Thoughts:** Another challenge I'm unable to pass. The above code works in isolation, but the test cases doesn't define input each time, and then my code fails. 
+
+**Link to work:** [Fold an array](https://www.codewars.com/kata/fold-an-array/train/javascript)
