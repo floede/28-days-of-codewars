@@ -267,3 +267,18 @@ foldArray(input, 2);
 **Thoughts:** Another challenge I'm unable to pass. The above code works in isolation, but the test cases doesn't define input each time, and then my code fails. 
 
 **Link to work:** [Fold an array](https://www.codewars.com/kata/fold-an-array/train/javascript)
+
+function WhatIsTheTime(timeInMirror)
+{
+  var fixedTime = "";
+  var fixedMins = 60 - parseInt(timeInMirror.slice(3,5));
+  fixedMins = fixedMins < 10 ? "0" + fixedMins : fixedMins;
+  fixedMins = fixedMins === 60 ? "00" : fixedMins;
+  if (fixedMins === "00") { var fixedHours = 12 - parseInt(timeInMirror.slice(0,2)); } 
+  else { var fixedHours = 11 - parseInt(timeInMirror.slice(0,2)); }
+  if (fixedHours === 0) { fixedHours = "12"};
+  if (fixedHours === -1) { fixedHours = "11"};
+  fixedHours = fixedHours < 10 ? "0" + fixedHours : fixedHours;
+  fixedTime = fixedHours + ":"  + fixedMins;
+  return fixedTime; 
+}
