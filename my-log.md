@@ -268,6 +268,14 @@ foldArray(input, 2);
 
 **Link to work:** [Fold an array](https://www.codewars.com/kata/fold-an-array/train/javascript)
 
+
+### Day 9: February 10, 2017 (Example 10)
+
+**Today's Challenge**: A man sees a clock in the mirror. What time is it?
+
+**Solution**:
+
+```
 function WhatIsTheTime(timeInMirror)
 {
   var fixedTime = "";
@@ -282,3 +290,8 @@ function WhatIsTheTime(timeInMirror)
   fixedTime = fixedHours + ":"  + fixedMins;
   return fixedTime; 
 }
+```
+
+**Thoughts:** I figured that this could be solved much prettier, as I felt that I basically brute forced it. But actually a lot of the solutions are quite similar to this.
+
+**Link to work:** [Clock In Mirror](https://www.codewars.com/kata/clock-in-mirror/javascript)
