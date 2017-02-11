@@ -295,3 +295,13 @@ function WhatIsTheTime(timeInMirror)
 **Thoughts:** I figured that this could be solved much prettier, as I felt that I basically brute forced it. But actually a lot of the solutions are quite similar to this.
 
 **Link to work:** [Clock In Mirror](https://www.codewars.com/kata/clock-in-mirror/javascript)
+
+
+var moveZeros = function (arr) {
+  var zeroes = [];
+  while(arr.indexOf(0)>=0) {
+    zeroes.push(parseInt(arr.splice(arr.indexOf(0),1).join()));
+  }
+  arr = arr.concat(zeroes);
+  return arr;
+}
