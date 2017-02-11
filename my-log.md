@@ -297,6 +297,14 @@ function WhatIsTheTime(timeInMirror)
 **Link to work:** [Clock In Mirror](https://www.codewars.com/kata/clock-in-mirror/javascript)
 
 
+
+### Day 10: February 11, 2017 (Example 11)
+
+**Today's Challenge**: Put all the zeroes at the end of the array
+
+**Solution**:
+
+```
 var moveZeros = function (arr) {
   var zeroes = [];
   while(arr.indexOf(0)>=0) {
@@ -305,3 +313,8 @@ var moveZeros = function (arr) {
   arr = arr.concat(zeroes);
   return arr;
 }
+```
+
+**Thoughts:** This was quite interesting as I originally had something far more complex, but by solving a couple of problems, I ended up with something far simpler.
+
+**Link to work:** [Moving zeroes to the end](https://www.codewars.com/kata/moving-zeros-to-the-end/javascript)
