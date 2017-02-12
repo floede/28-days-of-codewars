@@ -318,3 +318,18 @@ var moveZeros = function (arr) {
 **Thoughts:** This was quite interesting as I originally had something far more complex, but by solving a couple of problems, I ended up with something far simpler.
 
 **Link to work:** [Moving zeroes to the end](https://www.codewars.com/kata/moving-zeros-to-the-end/javascript)
+
+
+function scramble(str1, str2) {
+ //code me
+  var org = str2.split('');
+  var result = [];
+    for (var i = 0; i < org.length; i ++) {
+      if (str1.indexOf(org[i]) < 0) {
+        return false;
+      } else {
+        str1 = str1.replace(org[i],"");
+      }
+    } 
+  return true;
+}
