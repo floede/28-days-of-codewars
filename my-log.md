@@ -320,6 +320,13 @@ var moveZeros = function (arr) {
 **Link to work:** [Moving zeroes to the end](https://www.codewars.com/kata/moving-zeros-to-the-end/javascript)
 
 
+### Day 11: February 12, 2017 (Example 12)
+
+**Today's Challenge**: Can I write one string with the letters in another?
+
+**Solution**:
+
+```
 function scramble(str1, str2) {
  //code me
   var org = str2.split('');
@@ -333,3 +340,8 @@ function scramble(str1, str2) {
     } 
   return true;
 }
+```
+
+**Thoughts:** I looked for something better than the standard for loop, but couldn't quite find. And so my code works, but actually fails a performance test.
+
+**Link to work:** [Scramblies](https://www.codewars.com/kata/scramblies/train/javascript)
