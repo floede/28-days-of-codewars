@@ -346,6 +346,14 @@ function scramble(str1, str2) {
 
 **Link to work:** [Scramblies](https://www.codewars.com/kata/scramblies/train/javascript)
 
+
+### Day 12: February 13, 2017 (Example 13)
+
+**Today's Challenge**: Return seconds in a readable format
+
+**Solution**:
+
+```
 function formatDuration (seconds) {
   if (seconds <= 0) { return "now";}
   var text = [];
@@ -387,3 +395,8 @@ function getDivisionAndRemain (num, factor) {
   var division = (num - remains) / factor;
   return [division, remains];
 }
+```
+
+**Thoughts:** I had quite some trouble with this, but it turned out I had the wrong amount of seconds in a year. I was also very much looking forward to how it could be written shorter.  
+
+**Link to work:** [Human readable duration](https://www.codewars.com/kata/human-readable-duration-format/javascript)
