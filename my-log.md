@@ -345,3 +345,45 @@ function scramble(str1, str2) {
 **Thoughts:** I looked for something better than the standard for loop, but couldn't quite find. And so my code works, but actually fails a performance test.
 
 **Link to work:** [Scramblies](https://www.codewars.com/kata/scramblies/train/javascript)
+
+function formatDuration (seconds) {
+  if (seconds <= 0) { return "now";}
+  var text = [];
+  if (seconds >= 31536000) {
+    var yArr = getDivisionAndRemain(seconds , 31536000);
+    text.push(yArr[0] + " year" + (yArr[0] > 1 ? "s" : ""));
+    seconds = yArr[1];
+  }
+  if (seconds >= 86400) {
+    var dArr = getDivisionAndRemain(seconds , 86400);
+    text.push(dArr[0] + " day" + (dArr[0] > 1 ? "s" : ""));
+    seconds = dArr[1];
+  } 
+  if (seconds >= 3600) {
+    var hArr = getDivisionAndRemain(seconds , 3600);
+    text.push(hArr[0] + " hour" + (hArr[0] > 1 ? "s" : ""));
+    seconds = hArr[1];
+  }
+  if (seconds >= 60) {
+    var mArr = getDivisionAndRemain(seconds , 60);
+    text.push(mArr[0] + " minute" + (mArr[0] > 1 ? "s" : ""));
+    seconds = mArr[1];
+  }
+  if (seconds > 0) {
+    text.push(seconds + " second" + (seconds > 1 ? "s" : ""));
+  }
+  for (var i = 0; i < text.length -1; i++) {
+    if (text.length === 1) {break;}
+    else if (text.length === 2) {text.splice(1, 0, " and "); break;}
+    else if (i < text.length - 2) {
+      text[i] = text[i] + ", ";
+    } else { text.splice(-1, 0, " and "); break;}
+  }
+  return (text.join(""));
+}
+
+function getDivisionAndRemain (num, factor) {
+  var remains = num % factor;
+  var division = (num - remains) / factor;
+  return [division, remains];
+}
