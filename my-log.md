@@ -401,6 +401,14 @@ function getDivisionAndRemain (num, factor) {
 
 **Link to work:** [Human readable duration](https://www.codewars.com/kata/human-readable-duration-format/javascript)
 
+
+### Day 13: February 14, 2017 (Example 14)
+
+**Today's Challenge**: Check parentheses 
+
+**Solution**:
+
+```
 function validParentheses(parens){
   var parensCount = 0;
   for (var i = 0; i < parens.length; i++) {
@@ -410,3 +418,8 @@ function validParentheses(parens){
   }
   return parensCount ? false : true;
 }
+```
+
+**Thoughts:** This was quite easy, I'm a little surprised that it scores so much.
+
+**Link to work:** [Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/javascript)
