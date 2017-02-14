@@ -400,3 +400,13 @@ function getDivisionAndRemain (num, factor) {
 **Thoughts:** I had quite some trouble with this, but it turned out I had the wrong amount of seconds in a year. I was also very much looking forward to how it could be written shorter.  
 
 **Link to work:** [Human readable duration](https://www.codewars.com/kata/human-readable-duration-format/javascript)
+
+function validParentheses(parens){
+  var parensCount = 0;
+  for (var i = 0; i < parens.length; i++) {
+    if (parens[i] === "(") { parensCount++}
+    else if (parens[i] === ")") { parensCount--}
+    if (parensCount < 0) return false;
+  }
+  return parensCount ? false : true;
+}
