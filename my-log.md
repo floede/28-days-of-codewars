@@ -423,3 +423,9 @@ function validParentheses(parens){
 **Thoughts:** This was quite easy, I'm a little surprised that it scores so much.
 
 **Link to work:** [Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/javascript)
+
+var countBits = function(n) {
+  // Program Me
+  if (n > 1) return 0;
+  return (n >>> 0).toString(2).match(/1/g).length;
+};
