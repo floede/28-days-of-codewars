@@ -425,9 +425,9 @@ function validParentheses(parens){
 **Link to work:** [Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/javascript)
 
 
-### Day x: February x, 2017 (Example x)
+### Day 14: February 15, 2017 (Example 15)
 
-**Today's Challenge**: 
+**Today's Challenge**: Count the number of 1's in a binary string
 
 **Solution**:
 
@@ -439,6 +439,6 @@ var countBits = function(n) {
 };
 ```
 
-**Thoughts:** 
+**Thoughts:** Another fun little task. Gave me a reason to look into binary numbers
 
-**Link to work:** [Example](https://www.example.com)
+**Link to work:** [Bit counting](https://www.codewars.com/kata/bit-counting/javascript)
