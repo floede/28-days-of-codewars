@@ -424,8 +424,21 @@ function validParentheses(parens){
 
 **Link to work:** [Valid Parentheses](https://www.codewars.com/kata/valid-parentheses/javascript)
 
+
+### Day x: February x, 2017 (Example x)
+
+**Today's Challenge**: 
+
+**Solution**:
+
+```
 var countBits = function(n) {
   // Program Me
   if (n > 1) return 0;
   return (n >>> 0).toString(2).match(/1/g).length;
 };
+```
+
+**Thoughts:** 
+
+**Link to work:** [Example](https://www.example.com)
