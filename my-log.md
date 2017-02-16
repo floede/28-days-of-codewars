@@ -442,3 +442,15 @@ var countBits = function(n) {
 **Thoughts:** Another fun little task. Gave me a reason to look into binary numbers
 
 **Link to work:** [Bit counting](https://www.codewars.com/kata/bit-counting/javascript)
+
+function factorial(n){
+  // Add some code
+  if (n < 0) return null;
+  if (n === 0) return 1;
+  var factorial = 1;
+  for (var i = 1; i <=n; i++) {
+    factorial = factorial * i;
+  }
+  console.log(factorial)
+  //return factorial.toString();
+}
