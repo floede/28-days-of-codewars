@@ -443,6 +443,15 @@ var countBits = function(n) {
 
 **Link to work:** [Bit counting](https://www.codewars.com/kata/bit-counting/javascript)
 
+
+### Day 15: February 16, 2017 (Example 16)
+
+**Today's Challenge**: Return the factorial 
+
+**Solution**:
+
+```
+
 function factorial(n){
   // Add some code
   if (n < 0) return null;
@@ -454,3 +463,9 @@ function factorial(n){
   console.log(factorial)
   //return factorial.toString();
 }
+```
+
+**Thoughts:** This was a little confusing as the solution is pretty straight forward. However the tests tried running very big numbers, and apparently they aren't supported in javascript. Which I guess was the real task.
+Looking for solutions, I found nothing but different libraries to use, so I had to give up trying to find a home made solution.
+
+**Link to work:** [Large Factorials](https://www.codewars.com/kata/large-factorials/javascript)
