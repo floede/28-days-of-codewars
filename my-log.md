@@ -469,3 +469,17 @@ function factorial(n){
 Looking for solutions, I found nothing but different libraries to use, so I had to give up trying to find a home made solution.
 
 **Link to work:** [Large Factorials](https://www.codewars.com/kata/large-factorials/javascript)
+
+function pigIt(str){
+  //Code here
+  var pigStr = [];
+  var words = str.split(" ");
+  for (var i = 0 ;i < words.length ;i++) {
+    var input = words[i];
+    var firstLetter = input.charAt(0);
+    input = input.substring(1); //remove the first letter from the input string
+    input = input + firstLetter + "ay"; //add first letter and "ay" to end of input string
+    pigStr.push(input);
+  }
+  return pigStr.join(" ");
+}
