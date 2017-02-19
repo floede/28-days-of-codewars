@@ -496,6 +496,15 @@ function pigIt(str){
 
 **Link to work:** [Simple Pig Latin](https://www.codewars.com/kata/simple-pig-latin/javascript)
 
+
+
+### Day 17: February 19, 2017 (Example 18)
+
+**Today's Challenge**: Find the domain in a URL
+
+**Solution**:
+
+```
 function domainName(url){
   //your code here
   var domain = "";
@@ -511,3 +520,8 @@ function domainName(url){
   //console.log(domain);
   return domain;
 }
+```
+
+**Thoughts:** I knew this was pretty crude, but I still don't have the regex skills to do that.
+
+**Link to work:** [Extract the Domain](https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/javascript)
