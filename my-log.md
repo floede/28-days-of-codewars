@@ -495,3 +495,19 @@ function pigIt(str){
 **Thoughts:** This was quite simple. It can be done with just a regex, but I don't have that skill yet.
 
 **Link to work:** [Simple Pig Latin](https://www.codewars.com/kata/simple-pig-latin/javascript)
+
+function domainName(url){
+  //your code here
+  var domain = "";
+  var arr = url.split(".");
+  if (arr[0].indexOf("www") >= 0) {
+    domain = arr[1];
+  } else if (arr[0].indexOf("http") < 0) {
+    domain = arr[0];
+  } else {
+    arr = arr[0].split("//");
+    domain = arr[1];
+  }
+  //console.log(domain);
+  return domain;
+}
