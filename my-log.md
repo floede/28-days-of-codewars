@@ -525,3 +525,12 @@ function domainName(url){
 **Thoughts:** I knew this was pretty crude, but I still don't have the regex skills to do that.
 
 **Link to work:** [Extract the Domain](https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/javascript)
+
+def get_middle(s)
+  #your code here
+   if s.length % 2 == 0
+   return s[s.length / 2 - 1, 2]
+   else
+   return s[(s.length - 1) / 2, 1]
+   end
+end
