@@ -549,8 +549,21 @@ end
 
 **Link to work:** [Get the middle character](https://www.codewars.com/kata/get-the-middle-character/ruby)
 
+
+### Day 18: February 20, 2017 (Example 20)
+
+**Today's Challenge**: Take a string and capitalize each word
+
+**Solution**:
+
+```
 class String
   def toJadenCase
     self.split(' ').map { |word| word.capitalize }.join(' ')
   end
 end
+```
+
+**Thoughts:** I'm still super rusty in Ruby, and I actually had to look up the solution to this, as I'm still not used to the implicit nature of Ruby. 
+
+**Link to work:** [Jaden Casing](https://www.codewars.com/kata/jaden-casing-strings/ruby)
