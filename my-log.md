@@ -526,6 +526,15 @@ function domainName(url){
 
 **Link to work:** [Extract the Domain](https://www.codewars.com/kata/extract-the-domain-name-from-a-url-1/javascript)
 
+
+
+### Day 18: February 20, 2017 (Example 19)
+
+**Today's Challenge**: Get the letter(s) in the middle 
+
+**Solution**:
+
+```
 def get_middle(s)
   #your code here
    if s.length % 2 == 0
@@ -534,3 +543,8 @@ def get_middle(s)
    return s[(s.length - 1) / 2, 1]
    end
 end
+```
+
+**Thoughts:** Decided to switch it up a little by trying Ruby. I need to familiarize myself with Ruby again. Return isn't needed for instance :-)
+
+**Link to work:** [Get the middle character](https://www.codewars.com/kata/get-the-middle-character/ruby)
