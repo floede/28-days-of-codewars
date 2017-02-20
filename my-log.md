@@ -548,3 +548,9 @@ end
 **Thoughts:** Decided to switch it up a little by trying Ruby. I need to familiarize myself with Ruby again. Return isn't needed for instance :-)
 
 **Link to work:** [Get the middle character](https://www.codewars.com/kata/get-the-middle-character/ruby)
+
+class String
+  def toJadenCase
+    self.split(' ').map { |word| word.capitalize }.join(' ')
+  end
+end
