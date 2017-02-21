@@ -568,6 +568,21 @@ end
 
 **Link to work:** [Jaden Casing](https://www.codewars.com/kata/jaden-casing-strings/ruby)
 
+
+
+### Day 19: February 21, 2017 (Example 21)
+
+**Today's Challenge**: Count the vowels in a string
+
+**Solution**:
+
+```
 def getCount(inputStr)
   inputStr.scan(/[aeiou]/i).size
 end
+```
+
+**Thoughts:** Another solution I had to look up, as apparently the "g" for global match doesn't work in Ruby. Instead the method is scan, which I couldn't find anywhere.
+On top of that, you don't even need a regex here, as you can just use .count("aeiou");
+
+**Link to work:** [Example](https://www.example.com)
