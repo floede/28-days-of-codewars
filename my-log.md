@@ -567,3 +567,7 @@ end
 **Thoughts:** I'm still super rusty in Ruby, and I actually had to look up the solution to this, as I'm still not used to the implicit nature of Ruby. 
 
 **Link to work:** [Jaden Casing](https://www.codewars.com/kata/jaden-casing-strings/ruby)
+
+def getCount(inputStr)
+  inputStr.scan(/[aeiou]/i).size
+end
