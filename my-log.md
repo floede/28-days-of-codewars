@@ -587,6 +587,15 @@ On top of that, you don't even need a regex here, as you can just use .count("ae
 
 **Link to work:** [Example](https://www.example.com)
 
+
+
+### Day 20: February 22, 2017 (Example 22)
+
+**Today's Challenge**: Find the number missing from the sequence
+
+**Solution**:
+
+```
 def find_missing_number(sequence)
   #your code here
   arr = sequence.split(" ").map(&:to_i)
@@ -607,3 +616,21 @@ def find_missing_number(sequence)
   end
   return 0
 end
+```
+
+**Thoughts:** Had a lot of fun with this, first trying to find the fail cases and then how to do what I wanted in Ruby. Naturally it can be done way shorter, and I'll just show a very very smart solution that shows of the beauty and power of Ruby.
+
+```
+def find_missing_number(sequence)
+  number_sequence = sequence.split.map(&:to_i).sort
+  
+  number_sequence.each.with_index(1) do |actual, expected|
+    return expected unless actual == expected
+  end
+  
+  0
+end
+```
+
+**Link to work:** [Broken Sequence](https://www.codewars.com/kata/broken-sequence/ruby)
+
