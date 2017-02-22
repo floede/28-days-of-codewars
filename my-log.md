@@ -586,3 +586,24 @@ end
 On top of that, you don't even need a regex here, as you can just use .count("aeiou");
 
 **Link to work:** [Example](https://www.example.com)
+
+def find_missing_number(sequence)
+  #your code here
+  arr = sequence.split(" ").map(&:to_i)
+  arr.sort!
+  if arr.size < 1
+    return 0
+  end
+  unless arr[0] == 1
+    return 1
+  end
+  $i = 0
+  $num = arr.size
+  until $i >= $num  do
+    unless arr[$i] == $i+1 
+      return $i+1
+    end
+    $i +=1;
+  end
+  return 0
+end
