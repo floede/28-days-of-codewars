@@ -634,6 +634,19 @@ end
 
 **Link to work:** [Broken Sequence](https://www.codewars.com/kata/broken-sequence/ruby)
 
+
+### Day 21: February 23, 2017 (Example 23)
+
+**Today's Challenge**: Clear whitespace from a string
+
+**Solution**:
+
+```
 def no_space(x)
   x.gsub(/\s/, "") 
 end
+```
+
+**Thoughts:** Didn't have a lot of time today, so I picked an easy one to be honest. But I also learned that Ruby has a delete() method, that does exactly what's needed.
+
+**Link to work:** [Remove Spaces](https://www.codewars.com/kata/remove-string-spaces/ruby)
