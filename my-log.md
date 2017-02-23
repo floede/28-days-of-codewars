@@ -634,3 +634,6 @@ end
 
 **Link to work:** [Broken Sequence](https://www.codewars.com/kata/broken-sequence/ruby)
 
+def no_space(x)
+  x.gsub(/\s/, "") 
+end
