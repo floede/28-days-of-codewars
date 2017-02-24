@@ -650,3 +650,11 @@ end
 **Thoughts:** Didn't have a lot of time today, so I picked an easy one to be honest. But I also learned that Ruby has a delete() method, that does exactly what's needed.
 
 **Link to work:** [Remove Spaces](https://www.codewars.com/kata/remove-string-spaces/ruby)
+
+def dont_give_me_five(start_,end_)
+    numbers = Array.new
+    for i in start_..end_ do
+      numbers.push(i) unless i % 5 == 0 && (i / 5).odd? || i / 10 == 5 
+    end
+    return numbers.size
+end
