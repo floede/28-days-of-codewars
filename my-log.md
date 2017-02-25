@@ -668,7 +668,7 @@ def dont_give_me_five(start_,end_)
 end
 ```
 
-**Thoughts:** 
+**Thoughts:** Another interesting challenge. Mostly I look through Ruby methods to see what fits best. In this case I was hoping for a simple way to pick out the numbers with 5 through math. Supposedly the simplest way is to turn the numbers to strings and search for those containing "5".
 
 **Link to work:** [Don't Give Me Five](https://www.codewars.com/kata/dont-give-me-five/train/ruby)
 
