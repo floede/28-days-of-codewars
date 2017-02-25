@@ -651,6 +651,14 @@ end
 
 **Link to work:** [Remove Spaces](https://www.codewars.com/kata/remove-string-spaces/ruby)
 
+
+### Day 22: February 24, 2017 (Example 24)
+
+**Today's Challenge**: Return the numbers in a range, minus anything with 5
+
+**Solution**:
+
+```
 def dont_give_me_five(start_,end_)
     numbers = Array.new
     for i in start_..end_ do
@@ -658,3 +666,9 @@ def dont_give_me_five(start_,end_)
     end
     return numbers.size
 end
+```
+
+**Thoughts:** 
+
+**Link to work:** [Don't Give Me Five](https://www.codewars.com/kata/dont-give-me-five/train/ruby)
+
