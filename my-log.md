@@ -672,6 +672,14 @@ end
 
 **Link to work:** [Don't Give Me Five](https://www.codewars.com/kata/dont-give-me-five/train/ruby)
 
+
+### Day 23: February 25, 2017 (Example 25)
+
+**Today's Challenge**: 
+
+**Solution**: How many passes does it take to make a palindrome? 
+
+```
 def palindrome_chain_length(n)
   str = n.to_s
   i = 0
@@ -681,3 +689,8 @@ def palindrome_chain_length(n)
   end
   i
 end
+```
+
+**Thoughts:** The conversion to string and back isn't pretty, but the "real" way to do it is cumbersome. 
+
+**Link to work:** [Palindrome chain length](https://www.codewars.com/kata/palindrome-chain-length/ruby)
