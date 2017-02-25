@@ -672,3 +672,12 @@ end
 
 **Link to work:** [Don't Give Me Five](https://www.codewars.com/kata/dont-give-me-five/train/ruby)
 
+def palindrome_chain_length(n)
+  str = n.to_s
+  i = 0
+  until str == str.reverse do 
+    str = (str.to_i + str.reverse.to_i).to_s
+    i +=1
+  end
+  i
+end
