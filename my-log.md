@@ -695,8 +695,21 @@ end
 
 **Link to work:** [Palindrome chain length](https://www.codewars.com/kata/palindrome-chain-length/ruby)
 
+
+### Day 24: February 26, 2017 (Example 26)
+
+**Today's Challenge**: Find the single odd or even number
+
+**Solution**:
+
+```
 def find_outlier(integers)
   evens = integers.select { |num| num.even? }
   odds = integers.select { |num| num.odd? }
   n = evens.size == 1 ? evens[0] : odds[0]
 end
+```
+
+**Thoughts:** Given the rules of the task, you only need to count either odds or evens, but that just feels a little weird.
+
+**Link to work:** [Find the parity outlier](https://www.codewars.com/kata/find-the-parity-outlier/ruby)
