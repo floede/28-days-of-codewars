@@ -694,3 +694,9 @@ end
 **Thoughts:** The conversion to string and back isn't pretty, but the "real" way to do it is cumbersome. 
 
 **Link to work:** [Palindrome chain length](https://www.codewars.com/kata/palindrome-chain-length/ruby)
+
+def find_outlier(integers)
+  evens = integers.select { |num| num.even? }
+  odds = integers.select { |num| num.odd? }
+  n = evens.size == 1 ? evens[0] : odds[0]
+end
