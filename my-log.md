@@ -713,3 +713,7 @@ end
 **Thoughts:** Given the rules of the task, you only need to count either odds or evens, but that just feels a little weird.
 
 **Link to work:** [Find the parity outlier](https://www.codewars.com/kata/find-the-parity-outlier/ruby)
+
+def song_decoder(song)
+  song.gsub(/(WUB)/, ' ').strip.squeeze(' ')
+end
