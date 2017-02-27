@@ -714,6 +714,21 @@ end
 
 **Link to work:** [Find the parity outlier](https://www.codewars.com/kata/find-the-parity-outlier/ruby)
 
+
+### Day 25: February 27, 2017 (Example 27)
+
+**Today's Challenge**: De-DubStepify a string
+
+**Solution**:
+
+```
 def song_decoder(song)
   song.gsub(/(WUB)/, ' ').strip.squeeze(' ')
 end
+```
+
+**Thoughts:** Once again it's really cool to discover how Ruby just has a method for everything. It kinda feels like cheating.
+
+**Link to work:** [Dubstep](https://www.codewars.com/kata/dubstep/ruby)
+0
+
