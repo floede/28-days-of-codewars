@@ -730,5 +730,16 @@ end
 **Thoughts:** Once again it's really cool to discover how Ruby just has a method for everything. It kinda feels like cheating.
 
 **Link to work:** [Dubstep](https://www.codewars.com/kata/dubstep/ruby)
-0
 
+
+def play_pass(str, n)
+  letters = ('a'..'z').to_a
+  numbers = ('0'..'9').to_a
+  str = str.chars.map { |x| letters.include?(x.downcase) ? letters[letters.find_index(x.downcase) + n - letters.size] : x}.join
+  
+  str = str.chars.map { |x| numbers.include?(x) ? 9 - x.to_i : x}.join
+  
+  str = str.chars.map.with_index(0) { |x, index| index.even? ? x.upcase : x}.join
+  
+  str.reverse
+end
